@@ -1,104 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Music - My Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVBAR: gunakan struktur ini di semua halaman -->
-    <header>
-      <div class="logo">
-        <img src="assets/Logo-Unpam.png" alt="Logo" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music - My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <img src="assets/Logo-Unpam.png" alt="Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Music Section -->
+  <main class="music">
+    <h1>My Music</h1>
+    <p>Kumpulan lagu favorit saya yang bisa diputar langsung di sini.</p>
+
+    <div class="music-grid">
+      <div class="music-item">
+        <h3>Berdansalah</h3>
+        <h3>Hindia</h3>
+        <audio controls>
+          <source src="assets/audio/Hindia-Berdansalah,Karir_Tak_Ada_Artinya.mp3" type="audio/mpeg">
+          Browser kamu tidak mendukung audio.
+        </audio>
       </div>
-
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="music.html" class="active">Music</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <!-- MUSIC CONTENT -->
-    <main class="music page">
-      <div class="container container-inner">
-        <h1>Playlist Saya</h1>
-        <p class="lead">Dengarkan beberapa koleksi musik saya.</p>
-        <div class="music-list">
-          <!-- Track 1 -->
-          <div class="track">
-            <div class="meta">
-              <div>
-                <h3>The Man Who Can't Be Moved</h3>
-                <div class="artist">The Script</div>
-              </div>
-              <!-- optional small text on right -->
-              <div class="duration">—</div>
-            </div>
-            
-            <audio controls preload="none">
-              <source
-                src="assets/audio/The_Man_Who_Can't _Be_Moved.mp3"
-                type="audio/mpeg"
-              />
-              Browser Anda tidak mendukung audio.
-            </audio>
-
-            <div class="links">
-              <a href="audio/lagu1.mp3" download>Download</a>
-            </div>
-          </div>
-
-          <!-- Track 2 -->
-          <div class="track">
-            <div class="meta">
-              <div>
-                <h3>Berdansalah, Karier Tak Ada Artinya</h3>
-                <div class="artist">Hindia</div>
-              </div>
-              <div class="duration">—</div>
-            </div>
-
-            <audio controls preload="none">
-              <source
-                src="assets/audio/Hindia-Berdansalah,Karir_Tak_Ada_Artinya.mp3"
-                type="audio/mpeg"
-              />
-              Browser Anda tidak mendukung audio.
-            </audio>
-
-            <div class="links">
-              <a href="audio/lagu2.mp3" download>Download</a>
-            </div>
-          </div>
-
-          <!-- Track 3 -->
-          <div class="track">
-            <div class="meta">
-              <div>
-                <h3>Town Theme</h3>
-                <div class="artist">
-                  Miyuki Homareda / Harvest Moon: Back to Nature
-                </div>
-              </div>
-              <div class="duration">—</div>
-            </div>
-
-            <audio controls preload="none">
-              <source src="audio/lagu3.mp3" type="audio/mpeg" />
-              Browser Anda tidak mendukung audio.
-            </audio>
-
-            <div class="links">
-              <a href="audio/lagu3.mp3" download>Download</a>
-            </div>
-          </div>
-        </div>
+      <div class="music-item">
+        <h3>The man who can't be moved</h3>
+        <h3>Script</h3>
+        <audio controls>
+          <source src="assets/audio/The_Man_Who_Can't _Be_Moved.mp3" type="audio/mpeg">
+          Browser kamu tidak mendukung audio.
+        </audio>
       </div>
-    </main>
-    <footer>&copy; 2025 Rifky — Website Pribadi</footer>
-  </body>
+      <div class="music-item">
+        <h3>Town</h3>
+        <h3>Harvest Moon:Back to Nature</h3>
+        <audio controls>
+          <source src="assets/audio/Town.mp3" type="audio/mpeg">
+          Browser kamu tidak mendukung audio.
+        </audio>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
